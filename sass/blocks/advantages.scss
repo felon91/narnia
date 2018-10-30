@@ -7,7 +7,8 @@
   .advantages__list {
     display: flex;
     flex-direction: column;
-    padding: 30px 15px;
+    padding: 0 15px;
+    margin: 30px auto;
   }
 
   .advantages__item {
@@ -75,7 +76,7 @@
   .advantages {
 
     .advantages__list {
-      padding: 55px 15px;
+      margin: 55px auto;
     }
 
     .advantages__item {
