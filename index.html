@@ -19,7 +19,27 @@
 					<img src="img/soon.svg" width="33" height="33" alt="">
 					<p>Нарния <span>Тренинг-центр</span></p>
 				</div>
-				<ul class="socials">
+				<nav class="menu header__menu">
+					<ul class="menu__list">
+						<li class="menu__element">
+							<a class="menu__link" href="#">Программа</a>
+						</li>
+						<li class="menu__element">
+							<a class="menu__link" href="#">О тренере</a>
+						</li>
+						<li class="menu__element">
+							<a class="menu__link" href="#">Стоимость</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="socials header__socials">
+					<li class="socials__element socials__element--hide">
+						<p class="phone socials__phone">
+							<a class="phone__link" href="tel:+79122968618">+7 (912) 296 86 18</a></p>
+						<p class="email socials__email">
+							<a class="email__link" href="mailto:centr-narnia@gmail.com">centr-narnia@gmail.com</a>
+						</p>
+					</li>
 					<li class="socials__element">
 						<a class="socials__link socials__link--telegramm" href="#">Telegram</a>
 					</li>
@@ -28,11 +48,34 @@
 					</li>
 				</ul>
 			</div>
-			<section class="training">
+			<section class="training header__training">
 				<article class="training__info">
-					<h1 class="training__title">Авторский тренинг<br> <span class="training__author">Геннадия  Ивлева</span><br> <span class="training__name"><b>«Из</b>целение»</span></h1>
+					<h1 class="training__title">Авторский тренинг<br> <span class="training__author">Геннадия  Ивлева</span><br> <span class="training__name"><b><span>«</span>Из</b>целение»</span></h1>
 					<p class="training__carriage"><time datetime="2018-11-24">24 ноября 2018</time>,<br> Екатеринбург</p>
+					<ul class="training__date-place">
+						<li class="training__date">
+							<time datetime="2018-11-24">24 ноября 2018</time>
+						</li>
+						<li class="training__place">
+							Екатеринбург,<br> ул. Красных борцов 12, офис 245
+						</li>
+					</ul>
 				</article>
+				<div class="reservation training__reservation">
+					<p class="reservation__title">Забронировать участие</p>
+					<form	action="#" method="post">
+						<div class="reservation__input">
+							<input type="text" name="name" placeholder="Имя">
+						</div>
+						<div class="reservation__input">
+							<input type="tel" name="phone" placeholder="Телефон*">
+						</div>
+						<div class="reservation__button">
+							<button type="submit"><span class="reservation__arrow">Отправить</span></button>
+						</div>
+						<p class="reservation__conf">* Нажимая на кнопку, я даю свое согласие на обработку моих персональных данных</p>
+					</form>
+				</div>
 			</section>
 		</div>
 	</header>

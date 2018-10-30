@@ -71,7 +71,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('allimg', function () {
-  return gulp.src('img/**/*.{png,jpg}')
+  return gulp.src('img/**/*.{png,jpg,svg}')
       .pipe(gulp.dest('build/img'))
       .pipe(browserSync.reload({stream: true}));
 });

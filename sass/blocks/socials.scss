@@ -1,5 +1,7 @@
 .socials {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 
   .socials__element {
     margin-right: 13px;
@@ -8,6 +10,10 @@
       margin-right: 0;
     }
 
+  }
+  
+  .socials__element--hide {
+    display: none;
   }
 
   .socials__link {
@@ -30,6 +36,40 @@
     height: 31px;
     font-size: 0;
     display: block;
+  }
+
+}
+
+@media (min-width: 480px) {
+
+  .socials {
+
+    .socials__element--hide {
+      display: block;
+    }
+
+  }
+
+}
+
+@media (min-width: 640px) {
+
+  .socials {
+
+    .socials__element {
+      margin-right: 16px;
+    }
+
+    .socials__link--telegramm {
+      width: 39px;
+      height: 39px;
+    }
+
+    .socials__link--whatsapp {
+      width: 39px;
+      height: 39px;
+    }
+
   }
 
 }
