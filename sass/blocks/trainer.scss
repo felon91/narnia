@@ -1,0 +1,137 @@
+.trainer {
+
+  .trainer__wrap {
+    margin: 30px auto;
+  }
+
+  .trainer__right {
+    display: none;
+  }
+
+  .trainer__title {
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+
+    &::after {
+      background: linear-gradient(90deg, #1A1E3B 0%, #0392CF 100%);
+      width: 122px;
+      height: 3px;
+      content: '';
+      display: block;
+      margin-top: 9px;
+    }
+
+  }
+
+  .trainer__list {
+    margin: 25px 0;
+  }
+
+  .trainer__fact {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding-left: 25px;
+    background: url('../img/check.svg') left 3px no-repeat;
+    margin: 20px 0;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .trainer {
+
+    .trainer__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .trainer__left {
+      flex-basis: calc(100% - 300px - 35px);
+    }
+
+    .trainer__right {
+      flex-basis: 300px;
+      display: block;
+    }
+
+    .trainer__thumb {
+      text-align: center;
+      margin-top: 110px;
+    }
+
+    .trainer__img {
+      display: block;
+      max-width: 100%;
+      margin: 25px auto;
+    }
+
+    .trainer__name {
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+
+    .trainer__cite {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      margin: 20px 0;
+    }
+
+  }
+
+}
+
+@media (min-width: 980px) {
+
+  .trainer {
+
+    .trainer__wrap {
+      margin: 100px auto 60px;
+    }
+
+    .trainer__left {
+      flex-basis: calc(100% - 365px - 35px);
+    }
+
+    .trainer__title {
+      font-size: 3.125rem;
+      line-height: 3.5rem;
+
+      &::after {
+        height: 6px;
+        max-width: 419px;
+        width: auto;
+        margin-top: 14px;
+      }
+
+    }
+
+    .trainer__right {
+      flex-basis: 365px;
+    }
+
+    .trainer__name {
+      font-size: 2.1875rem;
+      line-height: 2.625rem;
+    }
+
+    .trainer__cite {
+      font-size: 1.5625rem;
+      line-height: 2rem;
+    }
+
+    .trainer__list {
+      margin: 45px 0;
+    }
+
+    .trainer__fact {
+      font-size: 1.875rem;
+      line-height: 2.125rem;
+      padding-left: 55px;
+      background-size: 31px;
+      margin: 40px 0;
+    }
+
+  }
+
+}
