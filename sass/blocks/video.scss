@@ -1,0 +1,30 @@
+.video {
+  background: linear-gradient(114.5deg, $darkblue 62.55%, $blue 142.92%);
+  padding: 15px 0;
+  margin: 30px 0;
+
+  .video__title {
+    font-size: 0;
+  }
+
+  .video__block {
+    @include adaptive-video();
+  }
+
+}
+
+@media (min-width: 980px) {
+
+  .video {
+    margin: 60px 0 100px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .video {
+    padding: 0;
+  }
+
+}
