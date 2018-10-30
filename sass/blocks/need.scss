@@ -1,0 +1,87 @@
+.need {
+  background: url('../img/sun-two.svg') right bottom no-repeat, linear-gradient(94.92deg, #1A283B -7.24%, #0392CF 99.21%);
+
+  .need__wrap {
+    padding: 10px 15px;
+    margin: 30px auto;
+  }
+
+  .need__title {
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+    color: $white;
+    margin: 20px 0;
+  }
+
+  .need__list {
+    padding-bottom: 30px;
+  }
+
+  .need__element {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $white;
+    padding-left: 40px;
+    background: url('../img/two-arr.svg') left 3px no-repeat;
+    margin: 30px 0 35px;
+  }
+
+  .need__element--hide {
+    display: none;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .need {
+
+    .need__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .need__element {
+      flex-basis: 31%;
+      box-sizing: border-box;
+      margin-right: 3.5%;
+
+      &:nth-child(3n + 3) {
+        margin-right: 0;
+      }
+
+    }
+
+    .need__element--hide {
+      display: block;
+    }
+
+  }
+
+}
+
+@media (min-width: 980px) {
+
+  .need {
+    margin: 80px 0;
+    background-size: auto 135px;
+
+    .need__title {
+      font-size: 3.125rem;
+      line-height: 3.5rem;
+      margin-top: 55px;
+    }
+
+    .need__list {
+      padding-bottom: 70px;
+    }
+
+    .need__element {
+      font-size: 1.5625rem;
+      line-height: 1.875rem;
+      background-size: 25px;
+    }
+
+  }
+
+}
