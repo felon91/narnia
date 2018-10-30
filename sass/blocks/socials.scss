@@ -1,0 +1,35 @@
+.socials {
+  display: flex;
+
+  .socials__element {
+    margin-right: 13px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  .socials__link {
+    text-decoration: none;
+  }
+
+  .socials__link--telegramm {
+    background: url('../img/whatsapp.svg') center no-repeat;
+    background-size: 100%;
+    width: 31px;
+    height: 31px;
+    font-size: 0;
+    display: block;
+  }
+
+  .socials__link--whatsapp {
+    background: url('../img/telegram.svg') center no-repeat;
+    background-size: 100%;
+    width: 31px;
+    height: 31px;
+    font-size: 0;
+    display: block;
+  }
+
+}

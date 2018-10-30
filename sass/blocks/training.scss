@@ -1,0 +1,39 @@
+.training {
+
+  .training__info {
+    padding-bottom: 41px;
+  }
+
+  .training__title {
+    color: $white;
+    font-size: 1.5625rem;
+    line-height: 1.6875rem;
+    margin: 43px 0 21px 0;
+  }
+
+  .training__author {
+    font-size: 2.5rem;
+    line-height: 2.6875rem;
+    font-family: 'pf_beausans_probold';
+  }
+
+  .training__name {
+    color: $blue;
+    font-size: 1.875rem;
+    line-height: 2rem;
+    font-family: 'pf_beausans_probold';
+
+    b {
+      color: $lightblue;
+    }
+
+  }
+
+  .training__carriage {
+    font-size: 0.875rem;
+    line-height: 1.1rem;
+    color: $white;
+    margin: 21px 0;
+  }
+
+}

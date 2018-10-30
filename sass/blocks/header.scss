@@ -1,0 +1,20 @@
+.header {
+  background: linear-gradient(95.77deg, #1A283B -7.24%, #0392CF 99.21%);
+
+  .header__wrap {
+
+  }
+
+  .header__top {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .header__logo {
+    flex-basis: 176px;
+    max-width: 176px;
+  }
+
+}

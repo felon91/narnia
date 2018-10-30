@@ -11,9 +11,11 @@ html {
 
 body {
 	font-family: 'pf_beausans_probbook', sans-serif;
-	//-webkit-font-smoothing: antialiased;
-    //-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 	hyphens: auto;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
 }
 
 .container {
@@ -21,5 +23,5 @@ body {
 }
 
 .wrap {
-	@include min-max(320px, 1140px, 15px);
+	@include min-max(320px, 1170px, 20px);
 }

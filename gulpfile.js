@@ -128,7 +128,7 @@ gulp.task('serve', function () {
   gulp.watch("*.html", ["html"]);
   gulp.watch("js/**/*.js", ["scripts"]);
   gulp.watch("css/**/*.css", ["css"]);
-  gulp.watch("img/**/*.{png,jpg}", ["allimg"]);
+  gulp.watch("img/**/*.{png,jpg,svg}", ["allimg"]);
   gulp.watch("img/**/*.{svg}", ["svg"]);
 });
 
