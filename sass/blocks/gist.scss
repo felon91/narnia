@@ -1,0 +1,124 @@
+.gist {
+  background: url('../img/girl.jpg') center top no-repeat, linear-gradient(145.08deg, #1A283B 57.85%, #0392CF 242.54%);
+  background-size: 100%;
+  padding-top: 147px;
+  padding-bottom: 20px;
+
+  .gist__wrap {
+    margin: 30px auto;
+  }
+
+  .gist__text {
+
+    p {
+      color: $white;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      margin: 15px 0;
+    }
+
+    button {
+      background: linear-gradient(180deg, $orangefirst 0%, $orangelast 100%);
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 25px;
+      appearance: none;
+      border: none;
+      width: 100%;
+      cursor: pointer;
+      display: block;
+      color: $white;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      padding: 14px 0;
+      font-family: pf_beausans_probold;
+      margin: 30px 0 20px;
+
+      span {
+        background: url('../img/arrow-right.svg') no-repeat;
+        background-position: 98% center;
+        transition-duration: 500ms;
+        transition-property: background-position;
+        padding-right: 20px;
+      }
+
+      &:hover {
+        background: linear-gradient(180deg, darken($orangefirst, 5%) 0%, darken($orangelast, 5%) 100%);
+
+        span {
+          background-position: 100% center;
+        }
+
+      }
+
+    }
+  }
+
+  .gist__title {
+    font-size: 0;
+  }
+
+}
+
+@media (min-width: 480px) {
+
+  .gist {
+    padding-top: 250px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .gist {
+    background: url('../img/girl-desktop.jpg') left center no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 80px;
+
+    .gist__wrap {
+      margin: 0 auto;
+    }
+
+    .gist__text {
+      max-width: 420px;
+      margin-left: auto;
+
+      button {
+        max-width: 400px;
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: 980px) {
+
+  .gist {
+    margin: 60px 0 100px;
+
+    .gist__wrap {}
+
+    .gist__text {
+      max-width: 570px;
+
+      p {
+        font-size: 1.4375rem;
+        line-height: 1.75rem;
+        margin: 30px 0;
+      }
+
+      button {
+        font-size: 1.4375rem;
+        line-height: 1.75rem;
+        padding: 18px 0;
+        border-radius: 35px;
+        margin: 45px 0 20px 0;
+      }
+
+    }
+
+  }
+
+}
