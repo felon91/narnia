@@ -66,17 +66,19 @@
 				</div>
 				<div class="reservation training__reservation">
 					<p class="reservation__title">Забронировать участие</p>
-					<form	action="#" method="post">
+					<form class="landing-form" action="send_mail.php" method="post">
 						<div class="reservation__input">
 							<input type="text" name="name" placeholder="Имя">
 						</div>
 						<div class="reservation__input">
 							<input class="mask" type="tel" name="phone" placeholder="Телефон*">
+							<input type="hidden" name="hide" value="">
 						</div>
 						<div class="reservation__button">
 							<button type="submit"><span class="reservation__arrow">Отправить</span></button>
 						</div>
 						<p class="reservation__conf">* Нажимая на кнопку, я даю свое согласие на обработку моих персональных данных</p>
+						<div class="response-site"></div>
 					</form>
 				</div>
 			</section>
@@ -312,17 +314,19 @@
 		<div class="participation__wrap wrap">
 			<h2 class="participation__title">Хочу участвовать!</h2>
 			<div class="reservation reservation--modern participation__reservation">
-				<form	action="#" method="post">
+				<form class="landing-form" action="send_mail.php" method="post">
 					<div class="reservation__input wow fadeIn">
 						<input type="text" name="name" placeholder="Имя и фамилия">
 					</div>
 					<div class="reservation__input wow fadeIn">
 						<input class="mask" type="tel" name="phone" placeholder="Телефон*">
+						<input type="hidden" name="hide" value="">
 					</div>
 					<div class="reservation__button wow fadeIn">
 						<button type="submit"><span class="reservation__arrow">Отправить</span></button>
 					</div>
 					<p class="reservation__conf">* Нажимая на кнопку, я даю свое согласие на обработку моих персональных данных</p>
+					<div class="response-site"></div>
 				</form>
 			</div>
 		</div>
@@ -378,17 +382,19 @@
 			</div>
 			<div class="reservation reservation--acquaintance meeting__reservation">
 				<p class="reservation__title">Записаться на встречу</p>
-				<form	action="#" method="post">
+				<form class="landing-form" action="send_mail.php" method="post">
 					<div class="reservation__input">
 						<input type="text" name="name" placeholder="Имя">
 					</div>
 					<div class="reservation__input">
 						<input class="mask" type="tel" name="phone" placeholder="Телефон*">
+						<input type="hidden" name="hide" value="">
 					</div>
 					<div class="reservation__button">
 						<button type="submit"><span class="reservation__arrow">Отправить</span></button>
 					</div>
 					<p class="reservation__conf">* Нажимая на кнопку, я даю свое согласие на обработку моих персональных данных</p>
+					<div class="response-site"></div>
 				</form>
 			</div>
 		</div>

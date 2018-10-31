@@ -23,14 +23,19 @@
       width: 100%;
       font-size: 1.25rem;
       line-height: 2.375rem;
-      font-family: pf_beausans_proitalic;
-      color: $colorinput;
+      color: $black;
       padding: 5px 10px 5px 19px;
       display: block;
+      font-family: 'pf_beausans_probbook';
+    }
+
+    .input-err {
+      border-color: #ff0000;
     }
 
     ::placeholder {
       color: $colorinput;
+      font-family: pf_beausans_proitalic;
     }
     
   }
