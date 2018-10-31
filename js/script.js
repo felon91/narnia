@@ -7,7 +7,7 @@ $(document).ready(function () {
     nav: true,
     autoHeight: true,
     loop: true,
-    navText: ['<span>След<b>ующий</b></span>', '<span>Пред<b>ыдущий</b></span>'],
+    navText: ['<span>Пред<b>ыдущий</b></span', '<span>След<b>ующий</b></span>'],
     responsive: {
       0: {
         items: 1,
