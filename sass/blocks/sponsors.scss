@@ -1,0 +1,50 @@
+.sponsors {
+
+  p {
+
+    &:first-of-type {
+      color: #99A4AC;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+    }
+
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    color: $white;
+    
+    a {
+      font-size: 1rem;
+      line-height: 1.3125rem;
+      color: $white;
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+@media (min-width: 980px) {
+
+  .sponsors {
+
+    p {
+
+      &:first-of-type {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+      }
+
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+
+      a {
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+      }
+
+
+    }
+
+  }
+
+}
