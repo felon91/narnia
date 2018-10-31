@@ -63,8 +63,11 @@
 @media (min-width: 980px) {
 
   .need {
-    margin: 80px 0;
     background-size: auto 135px;
+
+    .need__wrap {
+      margin: 80px auto;
+    }
 
     .need__title {
       font-size: 3.125rem;

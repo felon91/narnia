@@ -3,13 +3,13 @@ $(document).ready(function () {
   var owl = $('.owl-carousel');
   owl.owlCarousel({
     margin: 0,
+    dots: true,
     nav: true,
-    dots: false,
     loop: true,
-    navText: [],
+    navText: ['<span>След<b>ующий</b></span>', '<span>Пред<b>ыдущий</b></span>'],
     responsive: {
       0: {
-        items: 1
+        items: 1,
       }
     }
   });

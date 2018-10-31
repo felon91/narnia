@@ -17,6 +17,9 @@
     position: relative;
     -ms-touch-action: pan-Y;
     -moz-backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     /* fix firefox animation glitch */ }
   .owl-carousel .owl-stage:after {
     content: ".";
@@ -61,55 +64,6 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
-.owl-carousel .owl-nav .owl-next {
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: url('../img/arrow-sprite.png') -35px 0 no-repeat;
-  width: 35px;
-  height: 59px;
-}
-
-.owl-carousel .owl-nav .owl-prev {
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: url('../img/arrow-sprite.png') 0 0 no-repeat;
-  width: 35px;
-  height: 59px;
-}
-
-@media (max-width: 560px) {
-
-  .owl-carousel .owl-nav .owl-next {
-    position: static;
-    right: 0px;
-    top: 50%;
-    transform: translateY(0);
-    background: url('../img/arrow-sprite.png') -17px 0 no-repeat;
-    background-size: 35px;
-    width: 17px;
-    height: 30px;
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  .owl-carousel .owl-nav .owl-prev {
-    position: static;
-    left: 0px;
-    top: 50%;
-    transform: translateY(0);
-    background: url('../img/arrow-sprite.png') 0 0 no-repeat;
-    background-size: 35px;
-    width: 17px;
-    height: 30px;
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-}
 
   .owl-carousel.owl-loaded {
     display: block; }
