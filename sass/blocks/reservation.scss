@@ -83,6 +83,51 @@
 
 }
 
+.reservation--modern {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+
+  .reservation__input {
+
+    input {
+      border-radius: 15px;
+    }
+
+  }
+
+  .reservation__conf {
+    color: #BDC7D4;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .reservation--modern {
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .reservation__input, .reservation__button {
+      flex-basis: 32%;
+      margin: 15px 0;
+    }
+
+    .reservation__conf {
+      margin: 15px 0;
+      color: $black;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+
+  }
+
+}
+
 @media (min-width: 980px) {
 
   .reservation {
@@ -104,6 +149,33 @@
     .reservation__conf {
       max-width: 280px;
       margin: 26px auto 30px;
+    }
+
+  }
+
+  .reservation--modern {
+
+    .reservation__input, .reservation__button {
+      flex-basis: 32%;
+      margin: 15px 0;
+
+      input, button {
+        max-width: 100%;
+        font-size: 1.875rem;
+        line-height: 2rem;
+      }
+
+      input {
+        padding-top: 13px;
+        padding-bottom: 13px;
+      }
+
+    }
+
+    .reservation__conf {
+      max-width: 100%;
+      text-align: left;
+      margin: 15px 0;
     }
 
   }
