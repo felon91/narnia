@@ -2,6 +2,7 @@
   background: linear-gradient(to top right, $blue, $darkblue);
   padding: 15px 0;
   margin: 30px 0;
+  max-height: 460px;
 
   .video__title {
     font-size: 0;
@@ -9,6 +10,12 @@
 
   .video__block {
     @include adaptive-video();
+    max-height: 460px;
+
+    iframe {
+      max-height: 460px;
+    }
+
   }
 
 }

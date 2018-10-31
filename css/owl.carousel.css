@@ -17,9 +17,9 @@
     position: relative;
     -ms-touch-action: pan-Y;
     -moz-backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*flex-wrap: wrap;*/
     /* fix firefox animation glitch */ }
   .owl-carousel .owl-stage:after {
     content: ".";
