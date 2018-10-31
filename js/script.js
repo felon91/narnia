@@ -45,3 +45,12 @@ $(document).ready(function () {
   });
 
 });
+
+
+$(window).resize(function(){
+
+  if(window.innerWidth >= 980) {
+
+  }
+
+});

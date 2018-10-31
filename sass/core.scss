@@ -25,3 +25,12 @@ body {
 .wrap {
 	@include min-max(320px, 1170px, 20px);
 }
+
+@media (max-width: 980px) {
+
+	.wow {
+		visibility: visible !important;
+		animation-name: none !important;
+	}
+
+}
