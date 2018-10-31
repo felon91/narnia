@@ -1,0 +1,328 @@
+.price {
+
+  .price__wrap {
+    margin: 30px auto;
+  }
+
+  .price__title {
+    color: $colorblack;
+    font-size: 1.5625rem;
+    line-height: 1.6875rem;
+    margin-bottom: 10px;
+  }
+
+  .price__list {
+
+  }
+
+  .price__pay {
+    background: linear-gradient(141.59deg, #1A283B 10.41%, #3D78CA 232.24%);
+    border-radius: 15px 15px 0 0;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .price__summ {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $white;
+    margin: 15px 0 30px 0;
+
+    span {
+      font-size: 2.5rem;
+      font-family: 'pf_beausans_problack';
+      display: inline-block;
+      line-height: 2.875rem;
+
+    }
+
+  }
+
+  .price__star {
+    color: $white;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 20px 0;
+    padding-left: 14px;
+
+    &::before {
+      content: "*";
+      font-size: 1rem;
+      line-height: 1.25rem;
+      color: $orangelast;
+      margin-left: -17px;
+      margin-right: 8px;
+    }
+
+  }
+
+  .price__info {
+    background: #EAEBEF;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 25px 0 15px;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+
+    span {
+      font-family: 'pf_beausans_problack';
+    }
+
+  }
+
+  .price__meet {
+    background: #ECF0F4;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      background: #DAECF9;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      filter: blur(80px);
+      display: block;
+      width: 50%;
+      height: 50%;
+      border-radius: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+  }
+
+  .price__time {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 10px 0 15px 0;
+    display: block;
+    position: relative;
+  }
+
+  .price__slogan {
+    font-size: 1.5625rem;
+    line-height: 2rem;
+    margin: 35px 0;
+    position: relative;
+
+    span {
+      color: $blue;
+    }
+
+  }
+
+  .price__place {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin: 35px 0;
+    position: relative;
+
+    a {
+      text-decoration: none;
+      color: $black;
+      background: url('../img/arrow-bottom.svg') right center no-repeat;
+      padding-right: 15px;
+
+      span {
+        border-bottom: 1px dashed $black;
+      }
+
+      &:hover {
+
+        span {
+          border-bottom-color: transparent;
+        }
+
+      }
+
+    }
+
+  }
+
+  .price__btn {
+    border: 3px solid #F37736;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    appearance: none;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $black;
+    background: none;
+    font-family: 'pf_beausans_probbook';
+    display: block;
+    width: 100%;
+    padding: 7px 0;
+    margin: 15px auto;
+    cursor: pointer;
+
+    span {
+      background: url('../img/arrow-orange.svg') 99% center no-repeat;
+      background-size: 10px;
+      padding-right: 20px;
+      display: inline-block;
+      padding-left: 20px;
+    }
+
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .price {
+
+    .price__list {
+      display: flex;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+    }
+
+    .price__pay {
+      border-radius: 0 15px 15px 0;
+      flex-basis: 50%;
+      box-shadow: none;
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .price__meet {
+      border-radius: 15px 0 0 15px;
+      flex-basis: 50%;
+      box-shadow: none;
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .price__slogan {
+      margin: 10px 0;
+    }
+
+    .price__place {
+      margin: 10px 0;
+    }
+
+    .price__summ {
+      margin: 10px 0;
+    }
+
+    .price__star {
+      margin: 10px 0;
+    }
+
+    .price__info {
+      margin: 15px 0;
+    }
+
+  }
+
+}
+
+@media (min-width: 980px) {
+
+  .price {
+
+    .price__wrap {
+      margin: 80px auto;
+    }
+
+    .price__title {
+      font-size: 3.125rem;
+      line-height: 3.5rem;
+      margin-bottom: 25px;
+    }
+
+    .price__pay, .price__meet {
+      padding: 25px 25px 30px 40px;
+      text-align: left;
+    }
+
+    .price__time {
+      font-size: 1.5625rem;
+      line-height: 2rem;
+    }
+
+    .price__slogan {
+      font-size: 2.5rem;
+      line-height: 2.875rem;
+      margin: 45px 0;
+    }
+
+    .price__place {
+      font-size: 1.5625rem;
+      line-height: 2rem;
+    }
+
+    .price__btn {
+      max-width: 390px;
+      font-size: 1.4375rem;
+      line-height: 1.75rem;
+      border-radius: 35px;
+      margin: 35px 0 15px;
+      padding: 15px 0;
+
+      &:hover {
+
+        span {
+          background-position: calc(100% - 1px) center;
+        }
+
+      }
+
+      span {
+        background-image: url('../img/orange-right.svg');
+        background-position: 98% center;
+        padding-left: 35px;
+        padding-right: 35px;
+        transition-property: background-position;
+        transition-duration: 500ms;
+      }
+
+    }
+    
+    .price__summ {
+      text-align: left;
+      font-size: 1.5625rem;
+      line-height: 2.25rem;
+
+      span {
+        font-size: 4.375rem;
+        line-height: 5rem;
+      }
+
+    }
+
+    .price__star {
+      font-size: 1.5625rem;
+      line-height: 2rem;
+    }
+
+    .price__info {
+      padding: 25px 20px 25px 35px;
+      text-align: left;
+
+      p {
+        font-size: 1.5625rem;
+        line-height: 2rem;
+      }
+
+    }
+
+  }
+
+}

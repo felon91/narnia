@@ -106,20 +106,40 @@
     .owl-prev {
       margin-right: 18px;
 
+      &:hover {
+
+        span {
+          background-position: 0 center;
+        }
+
+      }
+
       span {
-        background: url('../img/slider-left.svg') left center no-repeat;
-        padding-left: 15px;
+        background: url('../img/slider-left.svg') 2% center no-repeat;
+        padding-left: 20px;
         background-size: 8px;
+        transition-property: background-position;
+        transition-duration: 500ms;
       }
 
     }
 
     .owl-next {
 
+      &:hover {
+
+        span {
+          background-position: 100% center;
+        }
+
+      }
+
       span {
-        background: url('../img/slider-right.svg') right center no-repeat;
-        padding-right: 15px;
+        background: url('../img/slider-right.svg') 98% center no-repeat;
+        padding-right: 20px;
         background-size: 8px;
+        transition-property: background-position;
+        transition-duration: 500ms;
       }
 
     }
@@ -194,6 +214,7 @@
 @media (min-width: 980px) {
 
   .testimonials {
+    background: url('../img/list.svg') right bottom no-repeat, linear-gradient(97.18deg, #1A283B 25.89%, #0392CF 132.19%);;
 
     .testimonials__wrap {
       margin: 80px auto;
