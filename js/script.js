@@ -39,4 +39,9 @@ $(document).ready(function () {
     e.preventDefault();
   });
 
+  new WOW().init({
+    mobile: false,
+    offset: 150
+  });
+
 });
