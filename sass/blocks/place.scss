@@ -17,4 +17,130 @@
 
   }
 
+  p {
+    font-size: 1rem;
+    line-height: 1.4375rem;
+    margin: 15px 0;
+
+    span {
+      font-family: 'pf_beausans_probold';
+    }
+
+  }
+
+  .place__map {
+      background: linear-gradient(180deg, $blue 0%, $colorblack 100%);
+      width: 100%;
+      cursor: pointer;
+      display: block;
+      color: $colorblack;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      padding: 4px 0;
+      font-family: pf_beausans_probold;
+      margin: 25px auto 10px;
+      border-radius: 35px;
+      position: relative;
+      border: none;
+      text-decoration: none;
+      text-align: center;
+
+      img {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100%;
+        transform: translateX(-50%);
+      }
+
+      span {
+        background-color: $white;
+        display: block;
+        width: calc(100% - 8px);
+        margin: 0 auto;
+        padding: 12px 0;
+        border-radius: 35px;
+        position: relative;
+
+        b {
+
+          &:last-child {
+            background: url('../img/map-arrow.svg') no-repeat;
+            background-position: 60% center;
+            transition-duration: 500ms;
+            transition-property: background-position;
+            padding-left: 20px;
+            display: inline-block;
+            width: 6px;
+            height: 10px;
+          }
+
+        }
+
+      }
+
+      &:hover {
+        background: linear-gradient(180deg, darken($blue, 5%) 0%, darken($colorblack, 5%) 100%);
+
+        span {
+
+          b {
+
+            &:last-child {
+              background-position: 100% center;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    .place__red {
+      color: #E9360F;
+    }
+
+    .place__blue {
+      color: #1099D4;
+    }
+
+}
+
+@media (min-width: 768px) {
+  
+  .place {
+    
+    .place__map {
+      display: none;
+    }
+    
+  }
+  
+}
+
+@media (min-width: 980px) {
+
+  .place {
+
+    .place__title {
+      font-size: 3.125rem;
+      line-height: 3.5rem;
+      margin-bottom: 25px;
+
+      &::after {
+        display: none;
+      }
+
+    }
+
+    p {
+      font-size: 1.875rem;
+      line-height: 2.6875rem;
+    }
+
+  }
+
 }

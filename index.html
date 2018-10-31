@@ -324,24 +324,36 @@
 			<section class="question place-questions__question">
 				<h3 class="question__title">Остались вопросы ?</h3>
 				<figure class="question__info">
-					<picture>
-						<source media="(max-width: 768px)"
-										srcset="img/larisa.png"
-						>
-						<img class="question__img" src="img/larisa-desktop.png" alt="">
-					</picture>
-					<figcaption>
+					<div class="question__thumb">
+						<picture>
+							<source media="(max-width: 768px)"
+											srcset="img/larisa.png"
+							>
+							<img class="question__img" src="img/larisa-desktop.png" alt="">
+						</picture>
+					</div>
+					<figcaption class="question__text">
 						<p class="question__name">Лариса Широкова</p>
-						<a class="question__phone" href="#">+79122968618</a>
-						<a class="question__instagramm" href="#">@shirokova_larisa</a>
+						<p>
+							<a class="question__phone" href="#">+79122968618</a>
+						</p>
+						<p>
+							<a class="question__instagramm" href="#">@shirokova_larisa</a>
+						</p>
 						<blockquote class="question__cite">«С удовольствием отвечу на любой вопрос»</blockquote>
 					</figcaption>
 				</figure>
 			</section>
 			<section class="place place-questions__place">
 				<h2 class="place__title">Место</h2>
-				<p>Екатеринбург, ул. Ткачей, 23, здание А<br><br> <span>Clever Park</span>, 1 этаж, вход со стороны набережной, с ул. Машинной,  вывеска “Пространство”.</p>
+				<p>Екатеринбург, ул. Ткачей, 23, здание А</p>
+				<p><span>Clever Park</span>, 1 этаж, вход со стороны набережной, с ул. Машинной,  вывеска “Пространство”.</p>
+				<a class="place__map" href="#"><span>Смотреть в <b class="place__red">Я</b>.Картах<b></b></span></a>
+				<a class="place__map" href="#"><span>Смотреть в <b class="place__blue">G</b>.Картах<b></b></span></a>
 			</section>
+		</div>
+		<div class="map place-questions__map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A628df3b8e169db5e1d752e4dd19eff81431685e4cb03319ec60ac599cd097c8f&amp;width=100%25&amp;height=530&amp;lang=ru_RU&amp;scroll=true"></script>
 		</div>
 	</div>
 </div>

@@ -4,11 +4,46 @@
     margin: 30px auto;
   }
 
-  .place-questions__question {
+  .place-questions__map {
+    display: none;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .place-questions {
+
+    .place-questions__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .place-questions__question {
+      flex-basis: 48%;
+      order: 2;
+    }
+
+    .place-questions__place {
+      flex-basis: 48%;
+      order: 1;
+    }
+
+    .place-questions__map {
+      display: block;
+    }
 
   }
 
-  .place-questions__place {
+}
+
+@media (min-width: 980px) {
+
+  .place-questions {
+
+    .place-questions__wrap {
+      margin: 80px auto;
+    }
 
   }
 

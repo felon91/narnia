@@ -71,3 +71,50 @@
   }
 
 }
+
+@media (min-width: 980px) {
+
+  .question {
+    padding: 30px;
+
+    .question__title {
+      font-size: 2.1875rem;
+      line-height: 2.5rem;
+      text-align: left;
+    }
+
+    .question__info {
+      display: flex;
+    }
+
+    .question__thumb {
+      flex-basis: 160px;
+      margin-right: 40px;
+    }
+
+    .question__text {
+      flex-basis: calc(100% - 200px);
+    }
+
+    .question__name {
+      font-size: 1.5625rem;
+      line-height: 2.25rem;
+    }
+
+    .question__instagramm, .question__phone {
+      font-size: 1.5625rem;
+      line-height: 2.25rem;
+      background-size: 30px;
+      padding-left: 40px;
+    }
+
+    .question__cite {
+      display: block;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      margin: 25px 0;
+    }
+
+  }
+
+}
