@@ -36,19 +36,23 @@
       margin: 0 auto !important;
     }
 
+    .testimonials__name {
+      display: none;
+    }
+
   }
 
   .testimonials__thumb {
     margin: 25px auto;
     max-width: 200px;
+  }
 
-    p {
-      text-align: center;
-      font-size: 1rem;
-      line-height: 1.25rem;
-      color: $white;
-      margin: 10px 0;
-    }
+  .testimonials__name {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $white;
+    margin: 10px 0;
 
     a {
       color: $white;
@@ -143,6 +147,11 @@
       p {
         font-size: 1.25rem;
         line-height: 1.5rem;
+      }
+
+      .testimonials__name {
+        display: block;
+        text-align: left;
       }
 
     }
