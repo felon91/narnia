@@ -36,6 +36,12 @@
       margin: 0 auto !important;
     }
 
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
     .testimonials__name {
       display: none;
     }
