@@ -31,7 +31,7 @@ $(document).ready(function () {
     e.preventDefault();
   });
 
-  $('.menu__link').bind("click", function(e){
+  $('.menu__link, .price__map').bind("click", function(e){
     var anchor = $(this);
     $('html, body').stop().animate({
       scrollTop: $(anchor.attr('href')).offset().top
