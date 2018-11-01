@@ -25,7 +25,7 @@
     margin: 15px 0;
   }
 
-  .gallery__block--hide {
+  .gallery__block--hide-mobile {
     display: none;
   }
 
@@ -143,6 +143,14 @@
 
     .gallery__block {
       display: flex;
+    }
+
+    .gallery__block--hide-mobile {
+      display: flex;
+    }
+
+    .gallery__block--hide-desktop {
+      display: none;
     }
 
     .gallery__element {
