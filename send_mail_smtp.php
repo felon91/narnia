@@ -1,3 +1,4 @@
+<?php
 /**
 * SendMailSmtpClass
 *
@@ -134,3 +135,5 @@ class SendMailSmtpClass {
 
     }
 }
+
+?>

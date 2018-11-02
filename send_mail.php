@@ -24,7 +24,7 @@ if($_POST['name'] != ""){
 	$msg .= "Источник трафика: ".$_SERVER['HTTP_REFERER']."\r\n";
 
 
-	$result = $mailSMTP->send('felon_91@mail.ru', $theme, $msg, $headers); // отправляем письмо
+	$result = $mailSMTP->send('Yatskovd@gmail.com', $theme, $msg, $headers); // отправляем письмо
 
 	$status = 'success';
 	//$message = 'Спасибо! Ваша заявка принята. Мы мы свяжемся с Вами указанным способом в течение часа.';
