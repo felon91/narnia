@@ -1,28 +1,33 @@
 <?php
 
+require_once "send_mail_smtp.php";
+
 if($_POST['name'] != ""){ 
 	if ($_POST['phone'] !="") {
 		 if($_POST['hide'] == "") {
 
+     $mailSMTP = new SendMailSmtpClass('septik-kupit-spb@yandex.ru', 'testsmtpseptik', 'ssl://smtp.yandex.ru', 'Консультация septik-kupit-spb.ru', 465);
+         // создаем экземпляр класса
+        // $mailSMTP = new SendMailSmtpClass('логин', 'пароль', 'хост', 'имя отправителя');
 
-	$to = "felon_91@mail.ru"; // почта, на которую будет приходить письмо
-	$from = "info@noreply.ru";
-	$headers = "Reply-To: noreply@".$_SERVER['SERVER_NAME']."\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-type: text/plain; charset=UTF-8 \r\n";
-	$headers .= "From: ". $from ." \r\n";
-	$subject = "Заявка с лендинга (Нарния)";
+    // заголовок письма
+    $headers= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/plain; charset=utf-8\r\n"; // кодировка письма
+    $headers .= "From: Narnia <info@centr-narnia.ru>\r\n"; // от кого письмо
 
+
+    $theme = "Заявка с лендинга (Нарния)";
 	$msg = "";
-	$msg .= "Заявка с лендинга ".$_SERVER['SERVER_NAME']."\r\n";
 	$msg .= "Имя: ".$_POST['name']."\r\n";
-	$msg .= "Телефон: ".$_POST['phone']."\r\n";
+    $msg .= "Телефон: ".$_POST['phone']."\r\n";
+	$msg .= "\r\n";
+	$msg .= "Источник трафика: ".$_SERVER['HTTP_REFERER']."\r\n";
 
-	mail($to, $subject, $msg, $headers);
-	
+
+	$result = $mailSMTP->send('felon_91@mail.ru', $theme, $msg, $headers); // отправляем письмо
+
 	$status = 'success';
 	//$message = 'Спасибо! Ваша заявка принята. Мы мы свяжемся с Вами указанным способом в течение часа.';
-
 
 		} else {
 			$status = 'error';
