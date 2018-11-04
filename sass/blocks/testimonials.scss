@@ -42,10 +42,6 @@
       max-width: 100%;
     }
 
-    .testimonials__name {
-      display: none;
-    }
-
   }
 
   .testimonials__thumb {
@@ -54,7 +50,6 @@
   }
 
   .testimonials__name {
-    text-align: center;
     font-size: 1rem;
     line-height: 1.25rem;
     color: $white;
@@ -176,7 +171,6 @@
       }
 
       .testimonials__name {
-        display: block;
         text-align: left;
       }
 
